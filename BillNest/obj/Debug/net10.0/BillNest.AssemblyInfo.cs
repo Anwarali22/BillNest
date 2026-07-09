@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BillNest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46cba37cd23a4c6eaa38e5751024eafe84cca168")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f85be52ecf21242d28224253bba1610fe8510bb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BillNest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BillNest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
