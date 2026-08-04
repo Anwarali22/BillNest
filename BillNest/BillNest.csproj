@@ -7,8 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Learning\Daily Notes\" />
-    <Folder Include="Learning\Recall Notes\" />
+    <Compile Remove="Learning\Daily Notes\**" />
+    <Content Remove="Learning\Daily Notes\**" />
+    <EmbeddedResource Remove="Learning\Daily Notes\**" />
+    <None Remove="Learning\Daily Notes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Learning\Recall Notes\Daily Notes\" />
+    <Folder Include="src\Components\" />
   </ItemGroup>
 
 </Project>
