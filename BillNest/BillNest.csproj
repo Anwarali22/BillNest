@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Learning\Recall Notes\Daily Notes\" />
     <Folder Include="src\Components\" />
   </ItemGroup>
 
