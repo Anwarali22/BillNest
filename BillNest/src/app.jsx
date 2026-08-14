@@ -30,17 +30,21 @@ Header Component
 // Header.jsx
 //
 import Header from "./Components/Header";
+import CartCounter from "./Components/CartCounter";
+import ProductCard from "./Components/ProductCard";
+
 
 function App() {
     return (
 
         <>
             <Header />
-            <Header />
-            <Header />
-            <h2>Hello React</h2>
-            <p>Learning components</p>
-            </>
+            <ProductCard name="Laptop" price={60000} />
+            <ProductCard name="Mouse" price={300} />
+            <ProductCard name="Keyboard" price={1000} />
+            <ProductCard name="Monitor" price={15000} />
+            <CartCounter/>
+        </>
     );
 }
 
