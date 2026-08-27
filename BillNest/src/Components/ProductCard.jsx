@@ -1,3 +1,15 @@
+
+function Products({ product }) {
+    return (
+        <div>
+            <h2>Name: {product.name}</h2>
+            <p>Price: ₹{product.price}</p>
+            <button>Add</button>
+        </div>
+    )
+}
+
+
 function ProductCard(props)
 {
     return (
