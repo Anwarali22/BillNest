@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-
+import { Products } from "./ProductCard";
 function CartCounter() {
     //state1: Number of items in the cart
     // const [cartCount, setCartCount] = useState(0);
@@ -22,7 +22,8 @@ function CartCounter() {
         ...user,
         age: 38
     };
-
+    const [ProductName, setProductName] = useState("");
+    const [Price, setPrice] = useState("");
 
     const products = [
         { id: 1, name: "Laptops", price: 60000 },
@@ -55,6 +56,12 @@ function CartCounter() {
 
 
     }
+    function addProduct() {
+        // Prevent the browser's default form submission.
+        event.preventDefault();
+        console.log("Product:", name);
+        console.log("Price:", price);
+    }
 
     return (
         <>
@@ -70,10 +77,24 @@ function CartCounter() {
             }
             <p>------------------------------------</p>
             {products.map(product => (
-                <Products key={product.id} product={product}
+                <Products
+                    key={product.id}
+                    product={product}
                 />
             ))}
-        </>
-    );
+
+            <p>------------------------------------</p>
+            <form onSubmit={addProduct}>
+                <input type="text" placeholder="Product Name" value={ProductName} onChange={
+                    (event) => setProductName(event.target.value)
+                }
+                />
+                <input type="number" placeholder="Price" value={Price} onChange={
+                    (event) => setPrice(Number(event.target.value))
+                } />
+                <button type="submit">Add Product</button>
+            </form>
+            </>
+            );
 }
-export default CartCounter;
+            export default CartCounter;
