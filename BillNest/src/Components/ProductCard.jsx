@@ -1,16 +1,16 @@
 
-function Products({ product }) {
+ function Products({ product }) {
     return (
         <div>
             <h2>Name: {product.name}</h2>
             <p>Price: ₹{product.price}</p>
-            <button>Add</button>
+            <button>Adds</button>
         </div>
     )
 }
 
 
-function ProductCard(props)
+ function ProductCard(props)
 {
     return (
         <>
@@ -20,4 +20,5 @@ function ProductCard(props)
         </>
     );
 }
-export default ProductCard;
+//export default ProductCard;
+export { Products, ProductCard };

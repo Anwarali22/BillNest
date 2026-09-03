@@ -31,7 +31,7 @@ Header Component
 //
 import Header from "./Components/Header";
 import CartCounter from "./Components/CartCounter";
-import ProductCard from "./Components/ProductCard";
+import { ProductCard } from "./Components/ProductCard";
 
 
 function App() {
