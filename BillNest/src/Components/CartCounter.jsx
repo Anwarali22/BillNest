@@ -46,6 +46,11 @@ function CartCounter() {
 
         // };
 
+        setProductName([
+            ...Products
+        {
+                id: , name: "Laptops", price: 60000
+            }]);
         setCartCount({
             ...cartCount,
             count: cartCount.count + 1,
@@ -94,7 +99,7 @@ function CartCounter() {
                 } />
                 <button type="submit">Add Product</button>
             </form>
-            </>
-            );
+        </>
+    );
 }
-            export default CartCounter;
+export default CartCounter;
